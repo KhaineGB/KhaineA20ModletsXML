@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Khaine's 60-slot Bigger Backpack Mod" />
+        <Description value="This modlet changes the players backpack from 18 slots/45 total to 32 slots/60 total." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

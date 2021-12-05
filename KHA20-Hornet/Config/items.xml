@@ -1,0 +1,51 @@
+<config>
+	<append xpath="/items">
+		<item name="stingHornet">
+			<property name="CreativeMode" value="None"/>
+			<property name="Material" value="Morganic" />
+			<property name="Canhold" value="false" />
+			<property name="HoldType" value="28" />
+			<property name="Stacknumber" value="1" />
+			<property name="Candrop" value="false" />
+			<property class="Action0">
+				<property name="Class" value="Melee" />
+				<property name="Delay" value="2.0" />
+				<property name="Range" value="2.5" />
+				<property name="Sphere" value="0.4" />
+				<property name="Block_range" value="2.5" />
+				<property name="DamageEntity" value="15" />
+				<property name="DamageBlock" value="15" />
+				<property name="Sound_start" value="swoosh" />
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="15" tags="primary"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="15" tags="primary"/>
+				
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+					buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+					weights=".11,.07,.07,.05,.29,.36,.11"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="20"><!--InfectionRadiated-->
+					<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="3200"/><!--AbrasionRadiated-->
+			</effect_group>
+		</item>
+		
+		<!-- Hack to force-load entites on game boot -->
+		<item name="HornetLoadingHack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Assets/Hornet.unity3d?LoadingHack.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Assets/Hornet.unity3d?LoadingHack.prefab"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/> <!-- STK resource -->
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+</config>

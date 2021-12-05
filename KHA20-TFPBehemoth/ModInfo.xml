@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="TFP Behemoths" />
+        <Description value="Adds back the A16 cut TFP Behemoth and the unfinished A17 Radiated Behemoth." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Khaine's 12-slot Crafting Queue" />
+        <Description value="This modlet changes the players crafting queue from 4 slots to 12 slots." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

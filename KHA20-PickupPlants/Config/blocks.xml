@@ -1,0 +1,139 @@
+<configs>
+	<!-- Add the E action back to wild plants -->
+	<append xpath="/blocks/block[@name='plantedMushroom3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCotton3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCoffee3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedAloe3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPotato3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCorn3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedHop3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedSnowberry3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+<!-- Special fixes for player-grown crops so they can't be picked up with E -->
+	<set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+		<property name="Material" value="Mcorn"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']">
+		<property name="Texture" value="363"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']">
+		<property name="Texture" value="395"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']">
+		<property name="Texture" value="362"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']">
+		<property name="Material" value="Mcorn"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']">
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']">
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']">
+		<property name="Texture" value="244"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']">
+		<property name="Material" value="Mcorn"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="corn_harvest_shape"/>
+		<property name="Mesh" value="cutoutmoveable"/>
+		<property name="MultiBlockDim" value="1,3,1"/>
+		<property name="Texture" value="529"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedHop3HarvestPlayer']">
+			<property name="Texture" value="449"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedSnowberry3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+		<property name="Material" value="Mcorn"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']">
+		<property name="Material" value="Mcorn"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="corn_harvest_shape"/>
+		<property name="Mesh" value="cutoutmoveable"/>
+		<property name="MultiBlockDim" value="1,3,1"/>
+		<property name="Texture" value="529"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
+	<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">
+		<property name="Material" value="Mmushrooms"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="DisplayInfo" value="Description"/>
+		<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="OutdoorDecor/mushroom_harvest" param1="main_mesh"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<property name="PickupJournalEntry" value="farmingTip"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+	</append>	
+	
+</configs>

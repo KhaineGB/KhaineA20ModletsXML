@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/recipes">
+		<!-- Adding back the wood log spikes and scrap iron spikes -->		
+		<recipe name="scrapIronLogSpike4" count="1"> <!-- trap -->
+			<ingredient name="resourceScrapIron" count="40"/>
+		</recipe>
+
+		<recipe name="woodLogSpike1" count="1"> <!-- trap -->
+			<ingredient name="resourceWood" count="15"/>
+		</recipe>
+	</append>
+</configs>

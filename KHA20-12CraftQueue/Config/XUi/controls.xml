@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/controls">
+		<!-- Make cells not look like crap and item icons fit properly -->
+		<kh12_craft_queue_stack>
+			<rect controller="RecipeStack" width="57" height="57" collider_scale="1.1">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="63" height="63" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite name="background" color="[mediumGrey]" type="sliced" style="press" on_hover="true"/>
+				<sprite depth="1" name="itemIcon" width="53" height="53" atlas="ItemIconAtlas" sprite="" pos="0,-5" pivot="topleft" foregroundlayer="true"/>
+				<sprite depth="4" name="lockIcon" width="16" height="16" sprite="ui_game_symbol_hammer" pos="2,-2" visible="false" foregroundlayer="true"/>
+				<label depth="4" name="count" pos="4,-42" width="53" height="16" text="Test" font_size="16" justify="right" effect="outline" />
+				<label depth="4" name="timer" pos="34,-38" width="55" height="16" font_size="16" justify="center" pivot="center" color="[beige]"/>
+				<sprite depth="2" name="overlay" width="55" height="55" color="32,32,32,128" type="sliced"/>
+				<sprite depth="3" name="cancel" sprite="ui_game_symbol_x" width="55" height="55" color="255,0,0,0" type="sliced" visible="false" foregroundlayer="true"/>
+			</rect>
+		</kh12_craft_queue_stack>
+	</append>
+</configs>

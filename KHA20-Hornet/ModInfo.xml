@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="TFP Hornet" />
+        <Description value="Adds back the A15 cut TFP Hornet and appropriate sounds." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

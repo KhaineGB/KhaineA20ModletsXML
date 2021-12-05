@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish,,,,
+zombieBehemoth,entityclasses,Entity,,,Zombie Behemoth,,Zombie-Behemoth,Mastodonte zombi,Béhémoth zombie,Gigante zombie,ゾンビベヒーモス,좀비 짐승,Behemot zombie,Beemote Zumbi,Зомби-гигант,Dev Zombi Yaratık,丧尸巨兽,殭屍貝西摩斯,Mastodonte zombi
+zombieBehemothRadiated,entityclasses,Entity,,,Radiated Behemoth,,,,,,,,,,,,,

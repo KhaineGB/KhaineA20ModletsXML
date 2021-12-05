@@ -1,0 +1,106 @@
+<configs>
+    <!-- update the overall backpack size -->
+    <set xpath="/windows/window[@name='CharacterFrameWindow']">
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
+			<label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32" />
+			<sprite depth="2" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy" />
+			<label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" />
+		</panel>
+
+		<rect depth="2" name="searchControls" width="327" height="43" pos="0,-46">
+		<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="327" height="43" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="1" color="[mediumGrey]" type="sliced" globalopacity="true" />
+			<button depth="4" name="characterButton" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_character" pivot="center" tooltip="Description" tooltip_key="lblWornEquipment" sound="[paging_click]" selected="true" />
+			<button depth="4" name="statButton" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_ping" pivot="center" tooltip="Stats" sound="[paging_click]" tooltip_key="lblCharacterStats1" />
+			<button depth="4" name="coreStatButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_trophy" pivot="center" tooltip="Stats" sound="[paging_click]" tooltip_key="lblCharacterStats2" />
+
+
+			<!-- <panel pos="220,0" width="104" height="43" disableautobackground="true"> -->
+				<!-- <button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/> -->
+				<!-- <rect depth="4" name="background" pos="37,-7"> -->
+					<!-- <sprite name="background" style="icon30px" color="[black]" type="sliced" /> -->
+					<!-- <label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/> -->
+				<!-- </rect> -->
+				<!-- <button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/> -->
+			<!-- </panel> -->
+		</rect>
+
+		<rect visible="{showcharacter}">
+			<!--#$-IGS BEGIN: Disabling snap for the character preview frame area. Moving the previewFrame down to make space for a new level header. -$#-->
+			<panel name="previewFrame" depth="0" pos="0,-86" width="257" on_press="true" on_hover="true" disableautobackground="true" snap="false">
+			<!--*#$-IGS END.-$#-->
+				<rect>
+					<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="327" height="704" color="[black]" type="sliced" fillcenter="false" />
+					<sprite depth="1" color="[darkGrey]" type="sliced" width="256" />
+					<!-- <sprite depth="1" color="[lightGrey]" type="sliced" pos="3,-3" width="381" height="739" />
+					<sprite depth="1" color="[darkGrey]" type="sliced" width="304" height="697" pos="6,-5"/> -->
+					<texture depth="2" name="playerPreview" material="Materials/Transparent Colored" size="255,702" globalopacity="false"/>
+
+
+				</rect>
+			</panel>
+
+			<panel name="equipment" depth="10" pos="256, -89" width="70" height="699" disableautobackground="true" >
+				<grid name="inventory" rows="10" cols="1" cell_width="70" cell_height="70" controller="EquipmentStackGrid" repeat_content="true">
+					<equipment_stack name="0"/>
+				</grid>
+			</panel>
+		</rect>
+
+		<grid visible="{showstats}" depth="0" pos="0,-86" width="327" cols="1" cell_height="30" repeat_content="false" arrangement="vertical">
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerhealthtitle|once}" valuecontent="{playerhealth}/{playermaxhealth}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playerstaminatitle|once}" valuecontent="{playerstamina}/{playermaxstamina}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerfoodtitle|once}" valuecontent="{playermodifiedcurrentfood}/{playerfoodmax}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playerwatertitle|once}" valuecontent="{playermodifiedcurrentwater}/{playerwatermax}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playercoretemptitle|once}" valuecontent="{playercoretemp}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playerzombiekillstitle|once}" valuecontent="{playerzombiekills}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerpvpkillstitle|once}" valuecontent="{playerpvpkills}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playerdeathstitle|once}" valuecontent="{playerdeaths}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playertravelledtitle|once}" valuecontent="{playertravelled}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playeritemscraftedtitle|once}" valuecontent="{playeritemscrafted}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerlongestlifetitle|once}" valuecontent="{playerlongestlife}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playercurrentlifetitle|once}" valuecontent="{playercurrentlife}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerxptonextleveltitle|once}" valuecontent="{playerxptonextlevel}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Zombie Bear Kills" valuecontent="{cvar(zombiebearkill:0)}" /> <!-- this is how to display a cvar on the player stats screen -->
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Zombie Vulture Kills" valuecontent="{cvar(vulturekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Zombie Dog Kills" valuecontent="{cvar(dogkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Snake Kills" valuecontent="{cvar(snakekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Boar Kills" valuecontent="{cvar(boarkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Bear Kills" valuecontent="{cvar(bearkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Wolf Kills" valuecontent="{cvar(wolfkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Mountain Lion Kills" valuecontent="{cvar(lionkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Coyote Kills" valuecontent="{cvar(coyotekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Deer Kills" valuecontent="{cvar(deerkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Rabbit Kills" valuecontent="{cvar(rabbitkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Chicken Kills" valuecontent="{cvar(chickenkill:0)}" />
+		</grid>
+
+		<grid visible="{showcore}" depth="0" pos="0,-86" width="327" cols="1" cell_height="30" repeat_content="false" arrangement="vertical">
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="1" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="2" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="3" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="4" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="5" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="6" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="7" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="8" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="9" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="10" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="11" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="12" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="13" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="14" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="15" />
+			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="16" />
+			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="17" />
+			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="Pistol Kills" valuecontent="{cvar(pistolkill:0)}" /> <!-- this is how to display a cvar on the player stats screen -->
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Shotgun Kills" valuecontent="{cvar(shotgunkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="Rifle Kills" valuecontent="{cvar(riflekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Machine Gun Kills" valuecontent="{cvar(machinegunkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="Explosives Kills" valuecontent="{cvar(explosiveskill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Headshot Kills" valuecontent="{cvar(headshotkill:0)}" />
+		</grid>
+	</set>
+
+</configs>

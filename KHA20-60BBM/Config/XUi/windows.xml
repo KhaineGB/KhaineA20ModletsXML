@@ -1,0 +1,26 @@
+<configs>
+    <!-- update the overall backpack size -->
+    <set xpath="/windows/window[@name='windowBackpack']/@width">604</set>
+    <set xpath="/windows/window[@name='windowBackpack']/@height">373</set>
+    
+    <!-- increase the panel size -->
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">330</set>
+    
+    <!-- adjust the rows, heights, and their cell equivalent -->
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_height">60</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_width">60</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">601</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">363</set>
+	
+	<!-- adjust windowlooting to match the size of the new player dropped backpack container -->
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">10</set>
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">10</set>
+
+	<remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"></remove>
+	
+	<append xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']">
+       <kh60_backpack_item_stack name="0"/>
+	</append>
+</configs>

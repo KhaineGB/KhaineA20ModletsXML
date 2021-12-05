@@ -1,0 +1,88 @@
+<config>
+	<append xpath="/entity_classes">
+		<entity_class name="zombieBehemoth" extends="zombieTemplateMale">
+			<property name="Tags" value="entity,zombie,walker,feral,behemoth,cp"/>
+			<property name="Prefab" value="NPC"/>
+			<property name="SoundRandom" value="crawler_roam"/>
+			<property name="SoundAlert" value="crawler_alert"/>
+			<property name="SoundSense" value="crawler_sense"/>
+			<property name="SoundHurt" value="crawler_pain"/>
+			<property name="SoundDeath" value="crawler_death"/>
+			<property name="SoundAttack" value="crawler_attack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Assets/Behemoths.unity3d?zombieBehemoth" />
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="500"/>
+			<property name="ExperienceGain" value="6735"/>
+			<property name="MaxHealth" value="5000"/>
+			<property name="DeadBodyHitPoints" value="700"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandard"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="HandItem" value="meleeHandZombieBehemoth"/>
+			
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+			
+			<!-- Gameplay -->
+			<property name="MoveSpeed" value="0.06"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			
+			<property name="SizeScale" value="2"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieBehemothRadiated" extends="zombieTemplateMale">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,behemoth,cp"/>
+			<property name="Prefab" value="NPC"/>
+			<property name="SoundRandom" value="crawler_roam"/>
+			<property name="SoundAlert" value="crawler_alert"/>
+			<property name="SoundSense" value="crawler_sense"/>
+			<property name="SoundHurt" value="crawler_pain"/>
+			<property name="SoundDeath" value="crawler_death"/>
+			<property name="SoundAttack" value="crawler_attack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Assets/Behemoths.unity3d?zombieBehemothRadiated" />
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="500"/>
+			<property name="ExperienceGain" value="6735"/>
+			<property name="MaxHealth" value="5000"/>
+			<property name="DeadBodyHitPoints" value="700"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandard"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="HandItem" value="meleeHandZombieBehemoth"/>
+			
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+			
+			<!-- Gameplay -->
+			<property name="MoveSpeed" value="0.06"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			
+			<property name="SizeScale" value="2"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="8000"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.25"/> 
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3.7"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+	</append>
+</config>

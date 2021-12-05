@@ -1,0 +1,103 @@
+<config>
+	<append xpath="/Sounds">
+		<!-- Hornet Sounds -->
+		<SoundDataNode name="hornetalert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="9" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetalert1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetalert2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetalert3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetattack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="9" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetattack1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetattack2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetattack3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="2" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetdeath">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" noise="9" time="2.5" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetdeath1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetdeath2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetdeath3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetgiveup">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetroam1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetpain">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="9" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetpain1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetpain2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetpain3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="1" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetroam">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetflylp1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+
+		<SoundDataNode name="hornetsense">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" noise="9" time="4" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Hornet.unity3d?hornetsense1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="4" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+	</append>
+</config>

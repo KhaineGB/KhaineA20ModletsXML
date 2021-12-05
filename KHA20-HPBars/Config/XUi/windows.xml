@@ -1,0 +1,4 @@
+<configs>
+    <!-- allows the HP bar to work in all modes -->
+    <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+</configs>

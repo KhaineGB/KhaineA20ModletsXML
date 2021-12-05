@@ -1,0 +1,12 @@
+<configs>
+    <!-- update the overall backpack size -->
+    <set xpath="/windows/window[@name='windowCraftingQueue']">
+		<rect depth="0" pos="-52,-90" width="303" controller="CraftingQueue">
+			<!-- <sprite name="background" color="[black]" type="sliced" pos="0,-10" /> -->
+			<grid name="queue" rows="2" cols="6" pos="73,82" cell_width="60" cell_height="60" repeat_content="true">
+				<!--  <df_recipe_stack name="0"/> -->
+				<kh12_craft_queue_stack name="0"/>
+			</grid>
+		</rect>
+	</set>
+</configs>

@@ -1,0 +1,52 @@
+<config>
+	<append xpath="/entity_classes">		
+		<entity_class name="animalHornet" extends="animalTemplateHostile">
+			<property name="Tags" value="entity,animal,zombie,hostile,hornet"/>
+			<property name="Class" value="EntityHornet"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="RootMotion" value="true"/>
+			<property name="PhysicsBody" value="vulture"/>
+			<property name="Mass" value="35"/>
+			<property name="Mesh" value="#@modfolder:Assets/Hornet.unity3d?animalHornet" />
+			<property name="SizeScale" value="1"/>
+
+			<property name="AITask-1" value=""/>
+			<property name="AITarget-1" value=""/>
+
+			<property name="SoundRandom" value="hornetroam" />
+			<property name="SoundAlert" value="hornetalert" />
+			<property name="SoundHurt" value="hornetpain" />
+			<property name="SoundDeath" value="hornetdeath" />
+			<property name="SoundAttack" value="hornetattack" />
+			<property name="SoundSense" value="hornetsense" />
+			<property name="SoundGiveUp" value="hornetgiveup" />
+
+			<!-- Stealth -->
+			<property name="SightRange" value="120"/>
+
+			<!-- Gameplay -->
+			<property name="MoveSpeed" value="1"/>
+			<property name="MoveSpeedAggro" value="1, 1.5"/> <!-- Used when player in vehicle -->
+			<property name="MaxTurnSpeed" value="190"/>
+
+			<property name="HandItem" value="stingHornet"/>
+			<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+			<property name="DismemberMultiplierLegs" value="0"/>
+			<property name="PainResistPerHit" value="-1"/> <!-- no pain -->
+
+			<property name="DeadBodyHitPoints" value="175"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="3"/> 
+			<drop event="Harvest" name="foodHoney" tag="butcherHarvest" count="2"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			</effect_group>
+		</entity_class>
+	</append>  
+</config>

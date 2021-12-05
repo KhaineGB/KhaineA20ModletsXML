@@ -1,0 +1,20 @@
+<configs>
+	<!-- Make the icon select area a bit smaller so there's no overlap -->
+	<append xpath="/styles">	
+		<style name="kh60_itemStack">
+			<style_entry name="select_color" value="[beige]"/>
+			<style_entry name="press_color" value="[limeGreen]"/>
+			<style_entry name="final_pressed_color" value="[lightGrey]"/>
+			<style_entry name="background_color" value="[mediumGrey]"/>
+			<style_entry name="highlight_color" value="[hoverColor]"/>
+			<style_entry name="holding_color" value="[white]"/>
+			<style_entry name="width" value="48"/>
+			<style_entry name="height" value="48"/>
+			<style_entry name="hover_icon_grow" value="1.5"/>
+			<style_entry name="on_press" value="true"/>
+			<style_entry name="sound_volume" value="0.75"/>
+			<style_entry name="pickup_sound" value="[pickup_click]"/>
+			<style_entry name="place_sound" value="[place_click]"/>
+		</style>
+	</append>
+</configs>

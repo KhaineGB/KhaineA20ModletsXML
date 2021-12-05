@@ -1,0 +1,85 @@
+<config>
+	<set xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="ZombiesAll" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+
+		<spawn maxcount="8" respawndelay="0.3" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
+			
+		<spawn maxcount="4" respawndelay="2" time="Day" entitygroup="ZombiesAll" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+		<spawn maxcount="4" respawndelay="2" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+
+		<spawn maxcount="8" respawndelay="0.3" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.1" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown"/>
+
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+		<spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+	</set>
+	
+	<set xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="ZombiesBurntForest" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		
+		<spawn maxcount="8" respawndelay="0.25" time="Day" entitygroup="ZombiesBurntForest" tags="commercial,industrial" notags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
+			
+		<spawn maxcount="4" respawndelay="2" time="Day" entitygroup="ZombiesAll" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+		<spawn maxcount="4" respawndelay="2" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+
+		<spawn maxcount="8" respawndelay="0.15" time="Day" entitygroup="ZombiesDowntown" tags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.1" time="Night" entitygroup="ZombiesDowntown" tags="downtown"/>
+
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+		<spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+	</set>
+	
+	<set xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="ZombiesAll" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		
+		<spawn maxcount="8" respawndelay="0.2" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
+			
+		<spawn maxcount="4" respawndelay="2" time="Day" entitygroup="ZombiesAll" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+		<spawn maxcount="4" respawndelay="2" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+
+		<spawn maxcount="8" respawndelay="0.2" time="Day" entitygroup="ZombiesDowntown" tags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.09" time="Night" entitygroup="ZombiesDowntown" tags="downtown"/>
+
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+		<spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+	</set>
+		
+	<set xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="SnowZombies" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		
+		<spawn maxcount="8" respawndelay="0.09" time="Day" entitygroup="SnowZombies" tags="commercial,industrial" notags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.06" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
+			
+		<spawn maxcount="4" respawndelay="2" time="Day" entitygroup="ZombiesAll" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+		<spawn maxcount="4" respawndelay="2" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+
+		<spawn maxcount="8" respawndelay="0.07" time="Day" entitygroup="ZombiesDowntown" tags="downtown"/>
+		<spawn maxcount="8" respawndelay="0.04" time="Night" entitygroup="ZombiesDowntown" tags="downtown"/>
+
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+		<spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsSnow" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential"/>
+	</set>
+	
+	<set xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" tags="wilderness"/>
+		
+		<spawn maxcount="10" respawndelay="0.033" time="Day" entitygroup="ZombiesWasteland" tags="commercial,industrial" notags="downtown"/>
+		<spawn maxcount="10" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandNight" tags="commercial,industrial" notags="downtown"/>
+			
+		<spawn maxcount="6" respawndelay="0.05" time="Day" entitygroup="ZombiesWasteland" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+		<spawn maxcount="6" respawndelay="0.025" time="Night" entitygroup="ZombiesWastelandNight" tags="residential,rural,gateway,countryresidential,countrytown,oldwest"/>
+
+		<spawn maxcount="10" respawndelay="0.0167" time="Day" entitygroup="ZombiesWastelandDowntown" tags="downtown"/>
+		<spawn maxcount="10" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandDowntown" tags="downtown"/>
+
+		<spawn maxcount="1" respawndelay="0.3" time="Any" entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />
+	</set>
+</config>

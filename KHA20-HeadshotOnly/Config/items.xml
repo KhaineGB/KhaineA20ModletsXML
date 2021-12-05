@@ -1,0 +1,17 @@
+<config>
+	<insertBefore xpath="/items/item[@name='ammoArrowFlaming']/property[@name='DisplayType']">
+		<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator,perkDemolitionsExpert"/>
+	</insertBefore>
+	
+	<insertBefore xpath="/items/item[@name='ammoArrowExploding']/property[@name='DisplayType']">
+		<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator,perkDemolitionsExpert"/>
+	</insertBefore>
+	
+	<insertBefore xpath="/items/item[@name='ammoCrossbowBoltFlaming']/property[@name='DisplayType']">
+		<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator,perkDemolitionsExpert"/>
+	</insertBefore>
+	
+	<insertBefore xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='DisplayType']">
+		<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator,perkDemolitionsExpert"/>
+	</insertBefore>
+</config>

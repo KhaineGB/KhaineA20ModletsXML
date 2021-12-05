@@ -1,0 +1,24 @@
+<configs>
+	<remove xpath="/buffs/buff[starts-with(@name, 'buffIsOnFire')]/effect_group[starts-with(@name, 'run particles')]" />
+	<insertAfter xpath="/buffs/buff[starts-with(@name, 'buffIsOnFire')]/effect_group[3]" >
+		<effect_group name="run particles, cleanup">
+			<requirement name="!EntityTagCompare" tags="behemoth"/>		
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="LOD0" shape_mesh="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="LOD0" shape_mesh="true"/> 
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="onFireTip"/>
+		</effect_group>
+
+		<effect_group name="run particles for customs, cleanup">
+			<requirement name="EntityTagCompare" tags="behemoth"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/p_onFire2.unity3d?p_onFire2" local_offset="0,-.2,0" parent_transform="Hips" />
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/p_onFire2.unity3d?p_onFire2" local_offset="0,-.2,0" parent_transform="Hips" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire2"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="onFireTip"/>
+		</effect_group>		
+	</insertAfter>
+</configs>

@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+ammo44MagnumBulletSteel,items,Ammo,,,".44 Magnum Round, Steel (Ammo)",,,,,,,,,,,,,,
+ammo9mmBulletSteel,items,Ammo,,,"9mm Round, Steel (Ammo)",,,,,,,,,,,,,,
+ammo762mmBulletFMJSteel,items,Ammo,,,"7.62mm Round, Steel (Ammo)",,,,,,,,,,,,,,
+ammoSteelCasedGroupDesc,items,Ammo,,,"Steel-cased ammunition is a cheap alternative to using brass but wears down barrels faster.",,,,,,,,,,,,,,
+resourceBulletCasingSteel,items,Item,,,"Bullet Casing, Steel",,,,,,,,,,,,,,
+resourceBulletCasingSteelDesc,items,Item,,,"Steel bullet casings are cheaper but cause more wear on the barrel.",,,,,,,,,,,,,,

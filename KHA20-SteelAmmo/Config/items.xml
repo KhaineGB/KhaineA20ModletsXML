@@ -1,0 +1,78 @@
+<khaine>
+	<append xpath="/items">
+		<item name="resourceBulletCasingSteel">
+			<property name="Extends" value="resourceBulletCasing"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/><property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Ammo/Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+		</item>
+		
+		<item name="ammo9mmBulletSteel">
+			<property name="Extends" value="ammo9mmBulletBall"/>
+			<property name="CustomIcon" value="ammo9mmBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="8"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="29"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+
+		<item name="ammo44MagnumBulletSteel">
+			<property name="Extends" value="ammo44MagnumBulletBall"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="76"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+			</effect_group>
+		</item>
+
+		<item name="ammo762mmBulletFMJSteel">
+			<property name="Extends" value="ammo762mmBulletBall"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="perkSniperHPAmmo"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="46"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+	</append>
+
+	<append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
+	<append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+	<append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>	
+	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>	
+</khaine>

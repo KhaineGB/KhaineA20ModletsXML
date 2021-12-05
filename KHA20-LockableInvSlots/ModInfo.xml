@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Lockable Slots" />
+		<Description value="Adds a box to the backpack and vehicle to allow users to lock slots so they cant be moved." />
+		<Author value="KhaineGB" />
+		<Version value="1.0" />
+	</ModInfo>
+</xml>

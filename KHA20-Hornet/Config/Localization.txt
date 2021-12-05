@@ -1,0 +1,2 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish,,,,
+animalHornet,entityclasses,Entity,,,Hornet,,Hornisse,Vespão,Frelon,Calabrone,雀蜂,호넷,Szerszeń,Vespão,шершень,Eşekarısı,马蜂,馬蜂,Avispón

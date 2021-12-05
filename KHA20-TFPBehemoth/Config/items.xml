@@ -1,0 +1,37 @@
+<config>
+	<append xpath="/items">
+		<item name="meleeHandZombieBehemoth">
+			<property name="Extends" value="meleeHandZombiePartyGirl"/>
+			<property name="CreativeMode" value="None"/>
+			<property class="Action0">
+				<property name="DamageEntity" value="500"/>
+				<property name="DamageBlock" value="2000"/>
+				<property name="Range" value="3"/>
+				<property name="Sphere" value="1"/>
+				<property name="Block_range" value="2"/>
+			</property>
+			<effect_group name="meleeHandZombieBehemoth" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffInjuryBleedingTwo"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".40" tags="buffInfectionCatch"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".50" tags="buffInjuryStunned01"/>
+			</effect_group>
+		</item>
+		
+		<!-- Hack to force-load entites on game boot -->
+		<item name="BehemothLoadingHack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Assets/Behemoths.unity3d?LoadingHack.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Assets/Behemoths.unity3d?LoadingHack.prefab"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/> <!-- STK resource -->
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+</config>

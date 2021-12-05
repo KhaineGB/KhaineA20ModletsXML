@@ -1,0 +1,4 @@
+<configs>
+<!-- Read the xui.xml, add the new window and disable the old one -->
+	<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']/@name">KHHUDLeftStatBars</set>
+</configs>

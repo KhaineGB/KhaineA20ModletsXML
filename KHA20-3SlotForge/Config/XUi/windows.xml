@@ -1,0 +1,42 @@
+<configs>
+	<append xpath="/windows">
+		<window name="windowThreeForgeInput" width="228" height="229" panel="Right"
+			controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
+			<panel style="header.panel" pos="0,2">
+				<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
+				<label style="header.name" text="INPUT" text_key="xuiSmelting" />
+			</panel>
+
+			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-43" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+			<rect name="content" depth="1" pos="0,-121" height="153">
+
+				<grid depth="7" rows="3" cols="1" pos="3,75" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+
+			</rect>
+
+			<rect name="content2" depth="0" pos="78, -46" width="147" height="223">
+				<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
+				<grid rows="7" cols="1" pos="3,-3" cell_width="147" cell_height="32"  repeat_content="true">
+					<forge_material name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+		<window name="windowThreeForgeOutput" pos="0,-48" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
+			<panel style="header.panel" pos="0,-38">
+				<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+				<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+			</panel>
+
+
+			<rect name="content" depth="0" pos="0,-83" height="150" disablefallthrough="true" on_press="true">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+					<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+						<item_stack name="0"/>
+					</grid>
+			</rect>
+		</window>		
+	</append>
+</configs>

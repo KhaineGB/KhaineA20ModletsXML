@@ -1,0 +1,6 @@
+<khaine>
+	<!-- Adding steel ammo to approprite perk so it can be unlocked -->
+	<append xpath="/progression/perks/perk[@name='perkPistolPeteHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo9mmBulletSteel</append>
+	<append xpath="/progression/perks/perk[@name='perkEnforcerHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo44MagnumBulletSteel</append>
+	<append xpath="/progression/perks/perk[@name='perkSniperHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo762mmBulletFMJSteel</append>
+</khaine>

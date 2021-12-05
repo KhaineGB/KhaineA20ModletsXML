@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Pick up wild plants mod, by Khaine" />
+        <Description value="This modlet restores the ability to pick up wild plants using E, like cotton, corn, goldenrod, etc." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

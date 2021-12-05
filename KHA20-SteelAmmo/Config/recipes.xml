@@ -1,0 +1,29 @@
+<khaine>
+	<append xpath="/recipes">
+		<recipe name="resourceBulletCasingSteel" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="2"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe> 
+		
+		<recipe name="ammo9mmBulletSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+			<ingredient name="resourceBulletCasingSteel" count="1"/>
+		</recipe>
+
+		<recipe name="ammo44MagnumBulletSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasingSteel" count="1"/>
+		</recipe>
+		
+		<recipe name="ammo762mmBulletFMJSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasingSteel" count="1"/>
+		</recipe>
+	</append>
+</khaine>

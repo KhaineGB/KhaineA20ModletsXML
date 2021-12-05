@@ -1,0 +1,5 @@
+<configs>
+	<!-- Change old forge input window to the new one -->
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">windowThreeForgeInput</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowThreeForgeOutput</set>
+</configs>

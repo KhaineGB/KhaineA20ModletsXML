@@ -1,0 +1,28 @@
+<configs>
+	<append xpath="/controls">
+		<!-- Make cells not look like crap and item icons fit properly -->
+		<kh60_backpack_item_stack controller="ItemStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
+			<rect controller="${controller}" style="kh60_itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="63" height="63" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" sprite="menu_empty3px" width="58" height="58" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/>
+				<sprite depth="2" name="highlightOverlay" width="57" height="57" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
+
+				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="58,58" globalopacity="true"/>
+				<sprite depth="8" name="favoriteIcon" width="24" height="24" sprite="server_favorite" pos="2,-2" foregroundlayer="true" visible="{isfavorite}"/>
+				<sprite depth="6" name="itemIcon" width="55" height="55" atlas="ItemIconAtlas" sprite="{itemicon}" pos="30,-25" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+				<sprite depth="8" name="lockTypeIcon" width="17" height="17" sprite="{locktypeicon}" pos="2,-2" foregroundlayer="true"/>
+				<sprite depth="8" name="itemtypeicon" width="24" height="24" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+
+				<sprite depth="3" name="durabilityBackground" width="56" height="7" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -50" foregroundlayer="true" visible="{hasdurability}" />
+				<filledsprite depth="4" name="durability" width="56" height="7" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" pos="1, -50" foregroundlayer="true" visible="{hasdurability}" />
+
+				<sprite depth="5" name="disabledOverlay" width="57" height="57" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+
+				<label depth="7" name="stackValue" pos="-2,-45" width="55" height="17" text="{itemcount}" font_size="26" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
+				<label depth="7" name="timer" pos="35,-38" width="55" height="21" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="55" height="55" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<sprite depth="13" name="assembleIcon" size="28,28" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			</rect>
+		</kh60_backpack_item_stack>
+	</append>
+</configs>
