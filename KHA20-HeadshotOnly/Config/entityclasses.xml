@@ -1,13 +1,26 @@
 <config>
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>
-			<requirement name="!HoldingItemHasTags" tags="perkDemolitionsExpert"/>
-			<requirement name="!HitLocation" body_parts="Head"/>
-			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-1"/>
-			
-			<!--
-				<passive_effect name="HeadShotOnly" operation="base_set" value="1"/> -->
+			<requirements compare_type="or">
+				<requirement name="HoldingItemHasTags" tags="perkSalvageOperations"/>
+				<requirement name="HoldingItemHasTags" tags="perkTheHuntsman"/>
+				<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
+				<requirement name="HoldingItemHasTags" tags="perkPummelPete"/>
+				<requirement name="HoldingItemHasTags" tags="perkElectrocutioner"/>
+				<requirement name="HoldingItemHasTags" tags="perkJavelinMaster"/>
+				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
+				<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+				<requirement name="HoldingItemHasTags" tags="perkGunslinger"/>
+				<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+				<requirement name="HoldingItemHasTags" tags="perkArchery"/>
+				<requirement name="HoldingItemHasTags" tags="perkTurrets"/>
+			</requirements>
+
+				<passive_effect name="HeadShotOnly" operation="base_set" value="1">
+					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+				</passive_effect>
 		</effect_group>
 	</append>
 </config>	
