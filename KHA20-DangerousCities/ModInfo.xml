@@ -3,7 +3,7 @@
     <ModInfo>
         <Name value="Dangerous Cities" />
         <Description value="Increases animal spawn in wilderness but decreases it in cities. Increases zombie spawn in cities but decreases it in the wilderness." />
-        <Author value="KhaineGB" />
-        <Version value="1.0.0" />
+        <Author value="KhaineGB"/>
+        <Version value="1.0.0"/>
     </ModInfo>
 </xml>

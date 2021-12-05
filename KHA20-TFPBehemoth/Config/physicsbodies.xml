@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/bodies">
-		<body name="mixamoConvertedStandard"> 
+		<body name="mixamoConvertedStandard">
 			<collider>
 				<property name="tag" value="E_BP_Body"/>
 				<property name="path" value="Hips"/>

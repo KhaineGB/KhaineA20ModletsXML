@@ -1,7 +1,5 @@
 <configs>
-	<!-- Make the icon select area a bit smaller so there's no overlap 
-    <set xpath="/styles/style[@name='itemStack']/style_entry[@name='width']/@value">50</set>
-    <set xpath="/styles/style[@name='itemStack']/style_entry[@name='height']/@value">50</set> -->
+	<!-- Make the icon select area a bit smaller so there's no overlap -->
 	<append xpath="/styles">	
 		<style name="kh60_itemStack">
 			<style_entry name="select_color" value="[beige]"/>

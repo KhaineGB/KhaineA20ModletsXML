@@ -27,7 +27,7 @@
 		<window name="windowThreeForgeOutput" pos="0,-48" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
 			<panel style="header.panel" pos="0,-38">
 				<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
-				<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+				<label style="header.name" text="OUTPUT" text_key="xuiOutput"/>
 			</panel>
 
 

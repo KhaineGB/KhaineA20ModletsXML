@@ -9,7 +9,6 @@
 	<append xpath="/windows">
 		<window name="KHHUDLeftStatBars">
 			<rect name="hud" pos="9,187" rows="2" cols="1" width="168" side="right">
-			<!-- <grid name="hud" pos="9,52" rows="3" cols="1" width="171" cell_width="168" cell_height="47" repeat_content="false" side="left" pivot="BottomLeft"> -->
 				<rect width="171" height="46" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
 					<sprite depth="1" name="border" color="0,0,0,150" height="46" type="sliced" />
 					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
@@ -94,6 +93,5 @@
 				</panel>
 			</rect>
 		</window>
-	</append>		
-	
+	</append>	
 </configs>

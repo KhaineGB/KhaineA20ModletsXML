@@ -1,5 +1,5 @@
 <configs>
-	<remove xpath="/buffs/buff[starts-with(@name, 'buffIsOnFire')]/effect_group[starts-with(@name, 'run particles')]" />
+	<remove xpath="/buffs/buff[starts-with(@name, 'buffIsOnFire')]/effect_group[starts-with(@name, 'run particles')]"/>
 	<insertAfter xpath="/buffs/buff[starts-with(@name, 'buffIsOnFire')]/effect_group[3]" >
 		<effect_group name="run particles, cleanup">
 			<requirement name="!EntityTagCompare" tags="behemoth"/>		

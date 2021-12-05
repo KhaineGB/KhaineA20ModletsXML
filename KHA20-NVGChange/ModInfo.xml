@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
     <ModInfo>
-        <Name value="Change Nightvision Effect" />
-        <Description value="Changes nightvision to use the Bright screen effect." />
-        <Author value="KhaineGB" />
-        <Version value="1.0.0" />
+        <Name value="Change Nightvision Effect"/>
+        <Description value="Changes nightvision to use the Bright screen effect."/>
+        <Author value="KhaineGB"/>
+        <Version value="1.0.0"/>
     </ModInfo>
 </xml>

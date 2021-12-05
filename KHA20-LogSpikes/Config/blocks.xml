@@ -8,16 +8,13 @@
 			<property name="Damage_received" value="6"/>
 			<property name="Material" value="Mwood_regular"/>
 			<property name="Shape" value="New"/>
-			<property name="LightOpacity" value="6"/> <!--
-			<property name="Path" value="solid"/> -->
+			<property name="LightOpacity" value="6"/> 
 			<property name="Model" value="cone1m"/>
 			<property name="Texture" value="21,21,22,22,22,22"/>
 			<property name="UseGlobalUV" value="Local"/>
 			<property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="FuelValue" value="300"/>
-			<!--property name="DontDamageOnTouch" value="true" /-->
-			<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
 			<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 			<property class="UpgradeBlock">
 				<property name="ToBlock" value="rWoodLogSpike2"/>
@@ -115,15 +112,12 @@
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="Material" value="Msteel"/>
 			<property name="Shape" value="New"/>
-			<property name="LightOpacity" value="6"/> <!--
-			<property name="Path" value="solid"/> -->
+			<property name="LightOpacity" value="6"/>
 			<property name="Model" value="cone1m"/>
 			<property name="Texture" value="356,355,356,356,356,356"/>
 			<property name="ImposterExchange" value="imposterPyramid" param1="112"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="UseGlobalUV" value="Local"/>
-			<!--property name="DontDamageOnTouch" value="true" /-->
-			<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
 			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
 			<property name="CustomUpgradeSound" value="place_block_metal"/>
 			<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>

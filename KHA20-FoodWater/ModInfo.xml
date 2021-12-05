@@ -2,8 +2,8 @@
 <xml>
     <ModInfo>
         <Name value="Khaine's Food and Water mod" />
-        <Description value="This modlet adds food and water to the left side of the HUD under health and stamina" />
-        <Author value="KhaineGB" />
-        <Version value="1.0.0" />
+        <Description value="This modlet adds food and water to the left side of the HUD under health and stamina"/>
+        <Author value="KhaineGB"/>
+        <Version value="1.0.0"/>
     </ModInfo>
 </xml>

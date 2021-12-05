@@ -21,7 +21,7 @@
 				<label depth="7" name="stackValue" pos="-2,-30" width="45" height="16" text="{itemcount}" font_size="18" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
 				<label depth="7" name="timer" pos="35,-33" width="45" height="16" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
 				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="45" height="45" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
-				<sprite depth="13" name="assembleIcon" size="28,28" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+				<sprite depth="13" name="assembleIcon" size="28,28" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true"/>
 			</rect>
 		</kh60_backpack_item_stack>
 	</append>

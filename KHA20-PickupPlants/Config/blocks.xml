@@ -36,11 +36,8 @@
 	<append xpath="/blocks/block[@name='plantedHop3Harvest']">
 		<property name="Class" value="CropsGrown"/>
 	</append>
-	<append xpath="/blocks/block[@name='plantedSnowberry3Harvest']">
-		<property name="Class" value="CropsGrown"/>
-	</append>
 	
-<!-- Special fixes for player-grown crops so they can't be picked up with E -->
+	<!-- Special fixes for player-grown crops so they can't be picked up with E -->
 	<set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
 	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
 		<property name="Material" value="Mcorn"/>
@@ -102,13 +99,6 @@
 			<property name="Texture" value="449"/>
 	</append>	
 	
-	<set xpath="/blocks/block[@name='plantedSnowberry3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
-	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
-		<property name="Material" value="Mcorn"/>
-		<property name="Shape" value="ModelEntity"/>
-		<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
-	</append>	
-	
 	<set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/property[@name='Extends']/@value">cropsHarvestableMaster</set>
 	<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']">
 		<property name="Material" value="Mcorn"/>
@@ -134,6 +124,5 @@
 		<property name="HarvestOverdamage" value="false"/>
 		<property name="PickupJournalEntry" value="farmingTip"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
-	</append>	
-	
+	</append>		
 </configs>
