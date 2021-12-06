@@ -62,18 +62,19 @@
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerlongestlifetitle|once}" valuecontent="{playerlongestlife}" />
 			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playercurrentlifetitle|once}" valuecontent="{playercurrentlife}" />
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerxptonextleveltitle|once}" valuecontent="{playerxptonextlevel}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Zombie Bear Kills" valuecontent="{cvar(zombiebearkill:0)}" /> <!-- this is how to display a cvar on the player stats screen -->
-			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Zombie Vulture Kills" valuecontent="{cvar(vulturekill:0)}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Zombie Dog Kills" valuecontent="{cvar(dogkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Snake Kills" valuecontent="{cvar(snakekill:0)}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Boar Kills" valuecontent="{cvar(boarkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Bear Kills" valuecontent="{cvar(bearkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Wolf Kills" valuecontent="{cvar(wolfkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Mountain Lion Kills" valuecontent="{cvar(lionkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Coyote Kills" valuecontent="{cvar(coyotekill:0)}" />
-			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Deer Kills" valuecontent="{cvar(deerkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" textcontent="Rabbit Kills" valuecontent="{cvar(rabbitkill:0)}" />
-			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Chicken Kills" valuecontent="{cvar(chickenkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="{playerlootstagetitle|once}" valuecontent="{playerlootstage}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Zombie Bear Kills" valuecontent="{cvar(zombiebearkill:0)}" /> <!-- this is how to display a cvar on the player stats screen -->
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="Zombie Vulture Kills" valuecontent="{cvar(vulturekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Zombie Dog Kills" valuecontent="{cvar(dogkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="Snake Kills" valuecontent="{cvar(snakekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Boar Kills" valuecontent="{cvar(boarkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="Bear Kills" valuecontent="{cvar(bearkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Wolf Kills" valuecontent="{cvar(wolfkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="Mountain Lion Kills" valuecontent="{cvar(lionkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Coyote Kills" valuecontent="{cvar(coyotekill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="Deer Kills" valuecontent="{cvar(deerkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Rabbit Kills" valuecontent="{cvar(rabbitkill:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]"    textcontent="Chicken Kills" valuecontent="{cvar(chickenkill:0)}" />
 		</grid>
 
 		<grid visible="{showcore}" depth="0" pos="0,-86" width="327" cols="1" cell_height="30" repeat_content="false" arrangement="vertical">
@@ -93,7 +94,7 @@
 			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="14" />
 			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="15" />
 			<player_stats_generic_entry backgroundcolor="[darkGrey]"    index="16" />
-			<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="17" />
+			<player_stats_entry backgroundcolor="[darkestGrey]"    textcontent="Chicken Kills" valuecontent="{cvar(chickenkill:0)}" />
 			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="Pistol Kills" valuecontent="{cvar(pistolkill:0)}" /> <!-- this is how to display a cvar on the player stats screen -->
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Shotgun Kills" valuecontent="{cvar(shotgunkill:0)}" />
 			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="Rifle Kills" valuecontent="{cvar(riflekill:0)}" />
