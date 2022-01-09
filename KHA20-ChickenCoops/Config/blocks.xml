@@ -1,0 +1,102 @@
+<config>
+	<append xpath="/blocks">
+		<block name="DFchickenCoop">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="chickenCoop" />
+			<property name="DescriptionKey" value="chickenCoopDesc"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="Material" value="Mwood_weak" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Assets/Chickens.unity3d?ChickenCoop.prefab"/>
+			<property name="RotationAllowed" value="pivotOnFloor" />
+			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="ModelOffset" value="-0.5,0.5,-0.5"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.Next" value="DFchickenCoop2"/>
+			<property name="PlantGrowing.GrowthRate" value="10"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="true"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>	
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="PickupJournalEntry" value="DFanimalCoopAndSnare"/>
+			<property name="CraftingSkillGroup" value="Traps"/>
+		</block>
+
+		<block name="DFchickenCoop2">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="chickenCoop" />
+			<property name="LightOpacity" value="0"/>
+			<property name="Material" value="Mwood_weak" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Assets/Chickens.unity3d?ChickenCoop2.prefab"/>
+			<property name="RotationAllowed" value="pivotOnFloor" />
+			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="ModelOffset" value="-0.5,0.5,-0.5"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.Next" value="DFChickenCoopFull"/>
+			<property name="PlantGrowing.GrowthRate" value="63"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="true"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+			<drop event="Harvest" name="foodRawMeat" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+
+		<block name="DFChickenCoopFull">
+			<property name="CreativeMode" value="None"/>
+			<property name="DescriptionKey" value=" chickenNestDesc"/>
+			<property name="Class" value="Loot" />
+			<property name="LightOpacity" value="0"/>
+			<property name="Material" value="Mwood_weak" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Assets/Chickens.unity3d?ChickenCoop3.prefab"/>
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="ModelOffset" value="-0.5,0.5,-0.5"/>
+			<property name="LootList" value="animalSnare" />
+			<property name="DowngradeBlock" value="DFchickenCoopLooted"/>
+			<drop event="Harvest" name="resourceFeather" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+		<block name="DFchickenCoopLooted">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="chickenCoop" />
+			<property name="DescriptionKey" value="chickenCoopDesc"/>
+			<property name="UnlockedBy" value="perkBasicFarming,perkLivingOffTheLand"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="Material" value="Mwood_weak" />
+			<property name="CreativeMode" value="None"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="Material" value="Mwood_weak" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Assets/Chickens.unity3d?ChickenCoop2.prefab"/>
+			<property name="RotationAllowed" value="pivotOnFloor" />
+			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="ModelOffset" value="-0.5,0.5,-0.5"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="DFchickenCoop2"/>
+				<property name="Item" value="DFanimalFeed"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="1"/>
+			</property>	
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="CraftingSkillGroup" value="Traps"/>
+		</block>
+	</append>
+</config>

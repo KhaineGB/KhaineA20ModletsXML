@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Chicken Coop Modlet"/>
+        <Description value="Adds a chicken coop to the game that the player can build and loot for eggs and feathers."/>
+        <Author value="KhaineGB"/>
+        <Version value="1.0.0"/>
+    </ModInfo>
+</xml>

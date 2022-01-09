@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+		<item name="DFanimalFeed">
+			<property name="CustomIcon" value="animalFeed" />
+			<property name="DescriptionKey" value="animalFeedDesc"/>
+			<property name="Meshfile" value="#Other/Items?Food/seed_blueberry" />
+			<property name="Material" value="Morganic" />
+			<property name="HoldType" value="21" />
+			<property name="CraftingIngredientTime" value="8" />
+			<property name="Stacknumber" value="500" />
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Repair_amount" value="50"/>
+				<property name="Upgrade_hit_offset" value="-4"/>
+				<property name="Sound_start" value="repair_block"/>
+				<property name="Delay" value="1.3"/> <!-- Repair actions still need the delay amount -->
+				<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+				<property name="Allowed_upgrade_items" value="DFanimalFeed"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+				<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+				<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="100" />
+				<passive_effect name="ModSlots" operation="base_set" value="0" />
+			</effect_group>
+			<property name="Group" value="Food/Cooking" />
+		</item>
+	</append>
+</configs>

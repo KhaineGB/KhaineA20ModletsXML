@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/blocks">
 		<block name="woodLogSpike1"> <!-- log spike 1 wood -->
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="TrunkTip"/>
 			<property name="BlockTag" value="Spike"/>
 			<property name="Damage" value="4"/>

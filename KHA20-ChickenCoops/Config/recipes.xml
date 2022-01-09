@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="DFanimalFeed" count="1" scrapable="false" tags="learnable">
+			<ingredient name="plantedPumpkin1" count="2" />
+		</recipe>
+
+		<recipe name="DFanimalFeed" count="1" scrapable="false" tags="learnable" >
+			<ingredient name="foodCropCorn" count="2" />
+		</recipe>
+
+		<recipe name="DFchickenCoop" count="1" scrapable="false" tags="learnable">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceYuccaFibers" count="15" />
+			<ingredient name="foodEgg" count="2" />
+		</recipe> 
+	</append>
+</configs>

@@ -1,0 +1,3 @@
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@level='1,3']/@tags">,DFanimalFeed,DFchickenCoop</append>
+</configs>

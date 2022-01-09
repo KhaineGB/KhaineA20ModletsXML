@@ -1,7 +1,7 @@
 <config>
 	<set xpath="/spawning/biome[@name='pine_forest']">
-		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="ZombiesAll" tags="wilderness"/>
-		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Day" entitygroup="ZombiesAll" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
 
 		<spawn maxcount="8" respawndelay="0.3" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown"/>
 		<spawn maxcount="8" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
@@ -17,8 +17,8 @@
 	</set>
 	
 	<set xpath="/spawning/biome[@name='burnt_forest']">
-		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="ZombiesBurntForest" tags="wilderness"/>
-		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Day" entitygroup="ZombiesBurntForest" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
 		
 		<spawn maxcount="8" respawndelay="0.25" time="Day" entitygroup="ZombiesBurntForest" tags="commercial,industrial" notags="downtown"/>
 		<spawn maxcount="8" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
@@ -34,8 +34,8 @@
 	</set>
 	
 	<set xpath="/spawning/biome[@name='desert']">
-		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="ZombiesAll" tags="wilderness"/>
-		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Day" entitygroup="ZombiesAll" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
 		
 		<spawn maxcount="8" respawndelay="0.2" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown"/>
 		<spawn maxcount="8" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
@@ -51,8 +51,8 @@
 	</set>
 		
 	<set xpath="/spawning/biome[@name='snow']">
-		<spawn maxcount="1" respawndelay="10" time="Day" entitygroup="SnowZombies" tags="wilderness"/>
-		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Day" entitygroup="SnowZombies" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="wilderness"/>
 		
 		<spawn maxcount="8" respawndelay="0.09" time="Day" entitygroup="SnowZombies" tags="commercial,industrial" notags="downtown"/>
 		<spawn maxcount="8" respawndelay="0.06" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown"/>
@@ -68,8 +68,8 @@
 	</set>
 	
 	<set xpath="/spawning/biome[@name='wasteland']">
-		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" tags="wilderness"/>
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.25" time="Day" entitygroup="ZombiesWasteland" tags="wilderness"/>
+		<spawn maxcount="1" respawndelay="0.25" time="Night" entitygroup="ZombiesWastelandNight" tags="wilderness"/>
 		
 		<spawn maxcount="10" respawndelay="0.033" time="Day" entitygroup="ZombiesWasteland" tags="commercial,industrial" notags="downtown"/>
 		<spawn maxcount="10" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandNight" tags="commercial,industrial" notags="downtown"/>
