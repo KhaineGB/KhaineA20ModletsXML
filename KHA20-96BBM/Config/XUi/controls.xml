@@ -5,7 +5,7 @@
 			<rect controller="${controller}" style="kh60_itemStack, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="53" height="53" color="[black]" type="sliced" fillcenter="false" />
 				<sprite depth="3" name="background" sprite="menu_empty3px" width="48" height="48" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/>
-				<sprite depth="2" name="highlightOverlay" width="57" height="47" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
+				<sprite depth="2" name="highlightOverlay" width="47" height="47" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
 
 				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="48,48" globalopacity="true"/>
 				<sprite depth="8" name="favoriteIcon" width="24" height="24" sprite="server_favorite" pos="2,-2" foregroundlayer="true" visible="{isfavorite}"/>
